@@ -1,0 +1,101 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+    min-height: 100vh;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.sidebar h4 {
+    color: #ecf0f1;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transform: translateX(5px);
+}
+
+.sidebar a.active {
+    background: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar a.text-danger:hover {
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.content {
+    padding: 30px;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.running-text {
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 0;
+    font-weight: 500;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.running-text p {
+    margin: 0;
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
